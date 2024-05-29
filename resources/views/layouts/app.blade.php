@@ -13,6 +13,7 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.css">
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
@@ -26,7 +27,9 @@
 
 <body>
     <div class=" bg-gray-100">
+    <div class=" bg-gray-100">
 
+        {{-- @php
         {{-- @php
             use App\Models\Notificacion;
             $notificaciones = Notificacion::where('visto', false)
@@ -37,16 +40,21 @@
                     return $group->first();
                 });
         @endphp --}}
+        @endphp --}}
 
         {{-- @include('layouts.navigation', ['notificaciones' => $notificaciones]) --}}
        
+        {{-- @include('layouts.navigation', ['notificaciones' => $notificaciones]) --}}
+       
         <!-- Page Heading -->
+        {{-- @if (isset($header))
         {{-- @if (isset($header))
             <header class="bg-white dark:bg-gray-800 shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     {{ $header }}
                 </div>
             </header>
+        @endif --}}
         @endif --}}
 
         <!-- Page Content -->
