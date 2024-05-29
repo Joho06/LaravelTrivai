@@ -20,9 +20,9 @@
                   <!-- Elementos -->
                   <ul class="cursor-pointer">
                        <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                        hover:text-gray-800 no-underline text-sm" href="">-Pagos</a></li>
+                        hover:text-gray-800 no-underline text-sm" href="/dashboard">-Pagos</a></li>
                         <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                          hover:text-gray-800 no-underline text-sm" href="">-Comisiones</a></li>
+                          hover:text-gray-800 no-underline text-sm" href="/dashboard">-Comisiones</a></li>
                   </ul>
                 </div>
               </li>
@@ -36,9 +36,9 @@
                   <!-- Elementos -->
                   <ul>
                     <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                       hover:text-gray-800 no-underline text-sm" href="">-Ajustes de Billetera</a></li>
+                       hover:text-gray-800 no-underline text-sm" href="/dashboard">-Ajustes de Billetera</a></li>
                     <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                       hover:text-gray-800 no-underline text-sm" href="">-Pagos en espera</a></li>
+                       hover:text-gray-800 no-underline text-sm" href="/dashboard">-Pagos en espera</a></li>
                   </ul>
                 </div>
               </li>
@@ -53,9 +53,9 @@
                   <!-- Elementos -->
                   <ul>
                     <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                       hover:text-gray-800 no-underline text-sm href="">-Ajustes de suscripción</a></li>
+                       hover:text-gray-800 no-underline text-sm" href="/dashboard">-Ajustes de suscripción</a></li>
                     <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                       hover:text-gray-800 no-underline text-sm" href="">-Pagos en espera</a></li>
+                       hover:text-gray-800 no-underline text-sm" href="/dashboard">-Pagos en espera</a></li>
                   </ul>
                 </div>
               </li>
@@ -120,9 +120,9 @@
                 <!-- Elementos -->
                 <ul class="cursor-pointer">
                      <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                      hover:text-gray-800 no-underline text-sm" href="">-Ajustes</a></li>
+                      hover:text-gray-800 no-underline text-sm" href="/dashboard">-Ajustes</a></li>
                       <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                        hover:text-gray-800 no-underline text-sm" href="">-Listado de paquetes</a></li>
+                        hover:text-gray-800 no-underline text-sm" href="/dashboard">-Listado de paquetes</a></li>
                 </ul>
               </div>
             </li>
@@ -136,9 +136,9 @@
                 <!-- Elementos -->
                 <ul>
                   <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                     hover:text-gray-800 no-underline text-sm" href="">-Ajustes</a></li>
+                     hover:text-gray-800 no-underline text-sm" href="/dashboard">-Ajustes</a></li>
                   <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                     hover:text-gray-800 no-underline text-sm" href="">-Listado de alojamientos</a></li>
+                     hover:text-gray-800 no-underline text-sm" href="/dashboard">-Listado de alojamientos</a></li>
                 </ul>
               </div>
             </li>
@@ -153,9 +153,9 @@
                 <!-- Elementos -->
                 <ul>
                   <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                     hover:text-gray-800 no-underline text-sm" href="">-Ajustes</a></li>
+                     hover:text-gray-800 no-underline text-sm" href="/dashboard">-Ajustes</a></li>
                   <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                     hover:text-gray-800 no-underline text-sm" href="">-Listado</a></li>
+                     hover:text-gray-800 no-underline text-sm" href="/dashboard">-Listado</a></li>
                 </ul>
               </div>
             </li>
@@ -169,9 +169,9 @@
                 <!-- Elementos -->
                 <ul>
                   <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                     hover:text-gray-800 no-underline text-sm" href="">-Ajustes</a></li>
+                     hover:text-gray-800 no-underline text-sm" href="/dashboard">-Ajustes</a></li>
                   <li><a class="text-gray-500 transform hover:translate-x-2 transition-transform ease-in duration-200
-                     hover:text-gray-800 no-underline text-sm" href="">-Listado</a></li>
+                     hover:text-gray-800 no-underline text-sm" href="/dashboard">-Listado</a></li>
                 </ul>
               </div>
             </li>

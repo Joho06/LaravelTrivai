@@ -9,7 +9,7 @@
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <link rel="icon" type="image/png"  sizes="200x200" href="{{ asset('images/logoFondoNegro.jpeg') }}">
-    <title>Trivai</title>
+    <title>AiTri</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" />
@@ -39,8 +39,7 @@
                 ->map(function ($group) {
                     return $group->first();
                 });
-        @endphp --}}
-        @endphp --}}
+        @endphp --}
 
         {{-- @include('layouts.navigation', ['notificaciones' => $notificaciones]) --}}
        
@@ -55,7 +54,7 @@
                 </div>
             </header>
         @endif --}}
-        @endif --}}
+        
 
         <!-- Page Content -->
         <div class=" bg-gray-100">
