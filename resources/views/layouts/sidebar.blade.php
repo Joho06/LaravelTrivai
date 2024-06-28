@@ -4,7 +4,7 @@
 <div class="min-h-screen flex flex-row bg-gray-100">
   <div class="flex flex-col w-56 bg-white rounded-r-3xl overflow-hidden">
     <div class="flex items-center justify-center h-20 shadow-md">
-      <h1 class="text-3xl uppercase text-indigo-500">AITRI</h1>
+      <h1 class="text-3xl uppercase text-indigo-500">AITRIV</h1>
     </div>
     <div x-data="{ open1: false }">
       <ul class="flex flex-col pt-3 cursor-pointer m-0">
@@ -26,7 +26,7 @@
                   </ul>
                 </div>
               </li>
-              
+
               <li x-data="{ open: false }">
                 <a @click="open = !open" class="no-underline flex flex-row items-center h-6 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                   <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -42,8 +42,8 @@
                   </ul>
                 </div>
               </li>
-              
-              
+
+
               <li x-data="{ open: false }">
                 <a @click="open = !open" class="no-underline flex flex-row items-center h-6 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                   <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -59,7 +59,7 @@
                   </ul>
                 </div>
               </li>
-              
+
               <li x-data="{ open: false }">
                 <a @click="open = !open" class="no-underline flex flex-row items-center h-6 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                   <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -75,9 +75,9 @@
                   </ul> --}}
                 </div>
               </li>
-             
+
             </div>
-            
+
           </template>
       </ul>
   </div>
@@ -99,9 +99,9 @@
                      hover:text-gray-800 no-underline  h-12 w-12 text-sm" href="{{ route('chat.chat') }}" :active="request()->routeIs('chat.*')">-Chat IA</a></li>
                 </ul>
               </div>
-            </li> 
+            </li>
           </div>
-          
+
         </template>
     </ul>
   </div>
@@ -126,7 +126,7 @@
                 </ul>
               </div>
             </li>
-            
+
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-6 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -142,8 +142,8 @@
                 </ul>
               </div>
             </li>
-            
-            
+
+
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-6 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -159,7 +159,7 @@
                 </ul>
               </div>
             </li>
-            
+
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-6 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -175,9 +175,9 @@
                 </ul>
               </div>
             </li>
-           
+
           </div>
-          
+
         </template>
     </ul>
   </div>
@@ -194,7 +194,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -202,7 +202,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -210,7 +210,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -218,7 +218,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -226,7 +226,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -234,7 +234,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -242,7 +242,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -250,7 +250,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -258,7 +258,7 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
             <li x-data="{ open: false }">
               <a @click="open = !open" class="no-underline flex flex-row items-center h-8 transform hover:translate-x-2 transition-transform ease-in duration-200 text-gray-500 hover:text-gray-800">
                 <span class="inline-flex items-center justify-center h-12 w-12 text-lg text-gray-400"><i class="bx bx-chat"></i></span>
@@ -266,9 +266,9 @@
               </a>
               <div x-show="open" class="pl-4 py-1">
               </div>
-            </li> 
+            </li>
           </div>
-          
+
         </template>
     </ul>
   </div>

@@ -244,7 +244,6 @@ class WhatsAppController extends Controller
         return json_encode($whatsApp);
     }
 
-
     public function webhook(Request $request)
     {
 
@@ -267,6 +266,8 @@ class WhatsAppController extends Controller
             ], 500);
         }
     }
+
+
     /*
       * RECEPCION DE MENSAJES
       */
@@ -462,7 +463,7 @@ class WhatsAppController extends Controller
     function convertirTextoAudio($texto, $numeroEnviar)
     {
         $data = array("texto" => $texto); // Aquí se pasa el texto como un parámetro
-        $url = 'https://trivai.me/audioToText';
+        $url = 'https://aitriv.com/audioToText';
         $ch = curl_init($url);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_POST, true);

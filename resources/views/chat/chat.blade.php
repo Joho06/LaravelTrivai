@@ -131,8 +131,8 @@
         var desarrollo = true;
         var telefonoEmisor = '593999938356';
         var tokenFin =
-            "EAALYfjkUo48BO06TlfWIDkeLafOPCf6rpQ9bsj04emZBwgF4k1RkjpQCbVuITExfGuM0MPhGwyQQa1J8UwqSy0KYEmfbwxZASwNIXXhEjsM0VMP5S4SEKZChrvr0t6iJZAVrhbSNh44VBZBAPZCSrXsJwdGXZC2bF0ZBt55tHwMggZCet6CdQi62ncUkNdKN1DQFd";
-        var urlPrincipal = "https://trivai.me"
+            "EAALYfjkUo48BOZCyOYsAoMhsyp5TquaKpZBNW740zfOulnCBH1XO9vCaVuQ7NXgTRv8ZBb4JZBjSruBtxZBGdryZBUq34skEN8MgjwIdtuBLgjRxgunIdpjg6QRsiIpk9jZBZBFI6sibfsfpMO4tjRx6WV1ZBdAULcQVnYZCFhZBOr3ZCymZC6EZA9tEwYkhZA4G9ZBRgm72zZArTpsZAN8OIZARPiQnJERZA4kfO0kZD";
+        var urlPrincipal = "https://aitriv.com"
         if (desarrollo) {
             urlPrincipal = "127.0.0.1:8000"
             telefonoEmisor = '593987411818';
