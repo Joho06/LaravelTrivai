@@ -10,6 +10,7 @@ use App\Models\Notificacion;
 use Carbon\Carbon;
 use CURLFile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class WhatsAppController extends Controller
 {
@@ -309,8 +310,8 @@ class WhatsAppController extends Controller
                 $mensaje = $this->conversacion($response);
                 $rutaAudio =  $this->convertirTextoAudio($mensaje, $telefonoUser);
                 $whatsApp = $this->guardarMensaje($timestamp, $mensaje, $id, $telefonoUser);
-                //$this->enviarMensajeMult($telefonoUser, $mensaje, 'audio', getenv('URL_RECURSOS') . '/' . $rutaAudio); //Envia el mismo mensaje de vuelta
-                $this->enviarMensaje($telefonoUser, $mensaje);
+                $this->enviarMensajeMult($telefonoUser, $mensaje, 'audio', getenv('URL_RECURSOS') . '/' . $rutaAudio); //Mensaje para audio
+                $this->enviarMensaje($telefonoUser, $mensaje);// mensaje para texto
 
             } elseif ($tipo == "image") {
                 $imagen = $respuesta['entry'][0]['changes'][0]['value']['messages'][0]['image'];
@@ -503,6 +504,12 @@ class WhatsAppController extends Controller
         } else {
             $respuesta = json_decode($result, true);
             return $respuesta['respuesta'];
+            $responseWithImage = Http::post('http://127.0.0.1:5000/add_hotel_image', ['response' => $mensajeRecibido]);
+            if ($responseWithImage->successful()) {
+                return $responseWithImage->body();
+            } else {
+                return $mensajeRecibido;
+            }
         }
     }
 }

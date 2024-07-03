@@ -16,8 +16,7 @@
         <!-- Notificaciones -->
         <div id="notificaciones"
             class=" bg-white dark:bg-slate-200 px-8 py-8 mt-5 ring-1  rounded-lg
-            ring-slate-900/5 shadow-xl "
-           >
+            ring-slate-900/5 shadow-xl ">
             <h3 class="text-xl font-semibold mb-4">Notificaciones</h3>
             @foreach ($mensajes->groupBy('id_numCliente') as $telefono => $mensajesTelefono)
                 @php
@@ -44,10 +43,8 @@
         </div>
 
         <!-- Chat -->
-        <div id="abrirchat"
-            style="display: none; width: 600px; "
-            class="relative w-full  bg-white dark:bg-slate-200 rounded-lg px-6 py-6 mt-5 ring-1 ring-slate-900/5 shadow-xl"
-            >
+        <div id="abrirchat" style="display: none; width: 600px; "
+            class="relative w-full  bg-white dark:bg-slate-200 rounded-lg px-6 py-6 mt-5 ring-1 ring-slate-900/5 shadow-xl">
             <h3 class="text-xl font-semibold">Chat</h3>
             <button onclick="cerrarChat()" class="absolute top-6 right-4 text-gray-600 hover:text-gray-800 h-20">
                 <!-- Icono de cierre (X) -->
@@ -254,32 +251,32 @@
             horaElemento.textContent = formatearHora(elemento['fecha_hora']);
             imagenElemento.src = urlImg;
             imagenElemento.style = `
-            width: 350px;
-            height: auto;
-            margin-bottom: 5px;
-            margin-left:5px;
+                width: 350px;
+                height: auto;
+                margin-bottom: 5px;
+                margin-left:5px;
             `;
 
             // Estilos para la hora
             horaElemento.style = `
-        font-size: 12px;
-        color: #515151;
-        margin-left: 10px;
-        `;
+                font-size: 12px;
+                color: #515151;
+                margin-left: 10px;
+            `;
 
             // Estilos para el nuevo elemento
             nuevoElemento.style = `
-        border-radius: 10px;
-        margin-bottom: 8px;
-        background-color: #ffffff;
-        font-family: Monserrat;
-        font-size: 12px;
-        padding-right: 10px;
-        line-height: 1;
-        color: #00000;
-        margin-right: 100px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        `;
+                border-radius: 10px;
+                margin-bottom: 8px;
+                background-color: #ffffff;
+                font-family: Monserrat;
+                font-size: 12px;
+                padding-right: 10px;
+                line-height: 1;
+                color: #00000;
+                margin-right: 100px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            `;
 
             // Ajuste de dimensiones del cuadro según la longitud del mensaje
             if (elemento['mensaje_enviado'].length < 20) {
@@ -312,21 +309,22 @@
             horaElemento.textContent = formatearHora(elemento['fecha_hora']);
 
             horaElemento.style = `
-        font-size: 12px;
-        color: #515151;
-        margin-left: 10px;
-        `;
+                font-size: 12px;
+                color: #515151;
+                margin-left: 10px;
+            `;
             //font-size: 13px;
             nuevoElemento.style = `
-        border-radius: 10px;
-        margin-bottom: 8px;
-        background-color: #ffffff;
-        font-family: Monserrat;
-        padding-right:10px;
-        line-height: 1;
-        color: #00000;
-        margin-right: 100px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); `;
+                border-radius: 10px;
+                margin-bottom: 8px;
+                background-color: #ffffff;
+                font-family: Monserrat;
+                padding-right:10px;
+                line-height: 1;
+                color: #00000;
+                margin-right: 100px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            `;
             if (elemento['mensaje_enviado'].length < 20) {
                 nuevoElemento.style.display = "flex";
                 var dimensionCuadro = 105 + elemento['mensaje_enviado'].length * 10;
@@ -371,34 +369,34 @@
             horaElemento.textContent = formatearHora(elemento['fecha_hora']);
             imagenElemento.src = urlImg;
             imagenElemento.style = `
-        width: 300px;
-        height: auto;
-        margin-bottom: 5px;
-        margin-right: 5px;
-    `;
+                width: 300px;
+                height: auto;
+                margin-bottom: 5px;
+                margin-right: 5px;
+            `;
 
             // Estilos para la hora
             horaElemento.style = `
-        font-size: 12px;
-        color: #515151;
-        margin-left: 10px;
-    `;
+                font-size: 12px;
+                color: #515151;
+                margin-left: 10px;
+            `;
 
             // Estilos para el nuevo elemento
             nuevoElemento.style = `
-        border-radius: 10px;
-        margin-bottom: 8px;
-        background-color: #dcf8c6;
-        font-family: Monserrat;
-        font-size: 12px;
-        padding-left: 10px;
-        line-height: 1;
-        color: #00000;
-        padding-left: 10px;
-        margin-left: 100px;
-        text-align: right;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    `;
+                border-radius: 10px;
+                margin-bottom: 8px;
+                background-color: #dcf8c6;
+                font-family: Monserrat;
+                font-size: 12px;
+                padding-left: 10px;
+                line-height: 1;
+                color: #00000;
+                padding-left: 10px;
+                margin-left: 100px;
+                text-align: right;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            `;
 
             // Ajuste de dimensiones del cuadro según la longitud del mensaje
             if (elemento['mensaje_enviado'].length < 20) {
@@ -436,22 +434,23 @@
 
             divGrande.style = `display: flex; justify-content: flex-end; `;
             horaElemento.style = `
-        font-size: 12px;
-        color: #515151;
-        margin-left: 30px;
+                font-size: 12px;
+                color: #515151;
+                margin-left: 30px;
 
-        `;
+            `;
 
             nuevoElemento.style = `
-        border-radius: 10px;
-        margin-bottom: 8px;
-        background-color: #dcf8c6;
-        font-family: Monserrat;
-        line-height: 1;
-        color: #00000;
-        padding-left: 10px;
-        text-align: right;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); `;
+                border-radius: 10px;
+                margin-bottom: 8px;
+                background-color: #dcf8c6;
+                font-family: Monserrat;
+                line-height: 1;
+                color: #00000;
+                padding-left: 10px;
+                text-align: right;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            `;
             if (elemento['mensaje_enviado'].length < 20) {
                 nuevoElemento.style.display = "flex";
                 var dimensionCuadro = 105 + elemento['mensaje_enviado'].length * 10;
