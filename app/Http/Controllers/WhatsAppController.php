@@ -11,6 +11,7 @@ use Carbon\Carbon;
 use CURLFile;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 
 class WhatsAppController extends Controller
 {
@@ -246,6 +247,7 @@ class WhatsAppController extends Controller
     }
 
     public function webhook(Request $request)
+
     {
 
         try {
@@ -255,7 +257,7 @@ class WhatsAppController extends Controller
             $token = $query['hub_verify_token'];
             $challenge = $query['hub_challenge'];
             if ($mode && $token) {
-                if ($mode === 'subscribe' && $token == $verifyToken) {
+                if ($mode === 'subscribe' && $token === $verifyToken) {
                     return response($challenge, 200)->header('Content-Type', 'text/plain');
                 }
             }
@@ -267,7 +269,6 @@ class WhatsAppController extends Controller
             ], 500);
         }
     }
-
 
     /*
       * RECEPCION DE MENSAJES
@@ -310,7 +311,7 @@ class WhatsAppController extends Controller
                 $mensaje = $this->conversacion($response);
                 $rutaAudio =  $this->convertirTextoAudio($mensaje, $telefonoUser);
                 $whatsApp = $this->guardarMensaje($timestamp, $mensaje, $id, $telefonoUser);
-                $this->enviarMensajeMult($telefonoUser, $mensaje, 'audio', getenv('URL_RECURSOS') . '/' . $rutaAudio); //Mensaje para audio
+                //$this->enviarMensajeMult($telefonoUser, $mensaje, 'audio', getenv('URL_RECURSOS') . '/' . $rutaAudio); //Mensaje para audio
                 $this->enviarMensaje($telefonoUser, $mensaje);// mensaje para texto
 
             } elseif ($tipo == "image") {

@@ -128,7 +128,7 @@
         var desarrollo = true;
         var telefonoEmisor = '593999938356';
         var tokenFin =
-            "EAALYfjkUo48BOZCyOYsAoMhsyp5TquaKpZBNW740zfOulnCBH1XO9vCaVuQ7NXgTRv8ZBb4JZBjSruBtxZBGdryZBUq34skEN8MgjwIdtuBLgjRxgunIdpjg6QRsiIpk9jZBZBFI6sibfsfpMO4tjRx6WV1ZBdAULcQVnYZCFhZBOr3ZCymZC6EZA9tEwYkhZA4G9ZBRgm72zZArTpsZAN8OIZARPiQnJERZA4kfO0kZD";
+            "EAAX58V5eyEEBOw68TUvx8eKrZAGnZBwHkAGkXI3VvGVnrrOgWOxjFJJGMOsJBXvuyiqypELtmuVJkdVBkQKoIBLopZAtAep3xkPv85wQnrYiEQ4paIokQZCCn5JEDJT6VdEx1jyBgckIhOxQkEH15qZAVd7TQHKNMX92mQNZAJQXRporOTY17DrZAu8KAIpZBaVZAHUwZCtgg48C3ZBJ9limN2C1V4oVugZD";
         var urlPrincipal = "https://aitriv.com"
         if (desarrollo) {
             urlPrincipal = "127.0.0.1:8000"
