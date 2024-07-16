@@ -171,9 +171,9 @@ Route::middleware(['auth'])->group(function () {
 
 // RUTAS DE WEBHOOKS
 // Autentifiación para conectarse con APIS (No necesita estar logeado)
-Route::get('webhook', [WhatsAppController::class, 'webhook'])
+Route::get('webhook/recibe', [WhatsAppController::class, 'webhook'])
     ->withoutMiddleware([VerifyCsrfToken::class]);
-Route::post('webhook', [WhatsAppController::class, 'recibe'])
+Route::post('webhook/recibe', [WhatsAppController::class, 'recibe'])
     ->withoutMiddleware([VerifyCsrfToken::class]);
 
 
